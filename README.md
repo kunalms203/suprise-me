@@ -1,8 +1,40 @@
-# React + Vite
+# Funny Surprise App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a fun React application that surprises users when they interact with a button. The button disappears when clicked, and a surprise message appears instead!
 
-Currently, two official plugins are available:
+## Features
+- A button that reacts to user interaction
+- Fun animations using Framer Motion
+- A disappearing button surprise effect
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/funny-surprise-app.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd funny-surprise-app
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+## Usage
+To start the app, run:
+```bash
+npm run dev
+```
+Then open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Technologies Used
+- React.js
+- Framer Motion
+- Tailwind CSS (for styling)
+
+## License
+This project is licensed under the MIT License.
+
+Enjoy the surprise! 🎩✨
+
