@@ -1,0 +1,25 @@
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+
+export default function FunnySurprise() {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  
+  const moveButton = () => {
+    setPosition({
+      x: Math.random() * (window.innerWidth - 100),
+      y: Math.random() * (window.innerHeight - 50),
+    });
+    setTimeout(() => alert("Gotcha! 😂"), 500);
+  };
+
+  return (
+    <div className="h-screen flex justify-center items-center bg-gray-900">
+      <motion.div animate={{ x: position.x, y: position.y }}>
+        <Button onClick={moveButton} className="bg-red-500 text-white p-4 text-lg shadow-lg">
+          Click Me!
+        </Button>
+      </motion.div>
+    </div>
+  );
+}
